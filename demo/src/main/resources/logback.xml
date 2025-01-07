@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration debug="true">
+    <!-- console表示当前日志信息是可以输出到控制台的-->
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>[%level] %blue([%thread]) %boldGreen(%logger{15}) - %msg %n</pattern>
+        </encoder>
+    </appender>
+    <logger name="com.qingmingxin" level="DEBUG" additivity="false">
+        <appender-ref ref="Console"/>
+    </logger>
+</configuration>
